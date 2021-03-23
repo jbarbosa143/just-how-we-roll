@@ -82,7 +82,7 @@ die.addEventListener('click', function(){
 // ================================================
 const dice = document.getElementById('double-d6');
 dice.addEventListener('click', function(){
-  doubleSixes.push(getRandomNumber(6),getRandomNumber(6));
+  doubleSixes.push(getRandomNumber(6) + getRandomNumber(6));
   dieNum1 = getRandomNumber(6);
   dieNum2 = getRandomNumber(6);
   document.getElementById('double-d6-rolls-mean').innerText = avg(doubleSixes);
